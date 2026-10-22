@@ -1,3 +1,5 @@
+import os, struct, sys
+
 here = os.path.dirname(os.path.abspath(__file__))
 name = os.path.basename(here)
 out = os.path.join(here, name + '.pck')
