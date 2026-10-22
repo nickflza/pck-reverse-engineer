@@ -9,7 +9,7 @@ The directory is the pack’s file index. The engine reads it when it mounts the
 The paths are virtual paths, not locations on disk. Entries like "Cache/Banners/..." and "Cache/Songs/..." look like paths relative to the game’s root. Once the pack is mounted, they would appear as if those folders and files existed there.
 Each record gives the offset, stored size and compression flag, so the engine can open one file without touching the rest. A read seeks to the offset and, for a flagged entry, decompresses on the fly with zlib.
 
-## Bit by bit walkthrough
+## Structure Walkthrough
 
 This is the structure of a sample .pck file.
 
